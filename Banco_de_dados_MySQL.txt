@@ -14,3 +14,21 @@ FLOAT: num decimal (float(7,5) = 7 caracteres e 5 decimais ex: 12.34567)
 DATE: YYYY/mm/dd
 TIME: hora
 DATETIME: date + time 
+
+RENOMEAR TABELAS
+
+RENAME TABLE <nome atual> TO <nome novo>
+
+INCLUINDO, EDITANDO E REMOVENDO TABELAS
+
+ALTER TABLE
+
+ADD: inclusão de uma nova coluna
+CHANGE: alteração do nome da coluna e de suas propriedades
+DROP: remoção
+
+ALTER TABLE <tabela> ADD COLUMN <nome da coluna e seu tipo>
+ALTER TABLE <tabela> CHANGE <nome da coluna que quer editar> <pode mudar
+ o nome da coluna e seus tipos>
+(se não quiser mudar o nome e apenas os dados, tem que recopiar o nome)
+ALTER TABLE <tabela> DROP <nome da coluna>
