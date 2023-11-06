@@ -32,3 +32,7 @@ ALTER TABLE <tabela> CHANGE <nome da coluna que quer editar> <pode mudar
  o nome da coluna e seus tipos>
 (se não quiser mudar o nome e apenas os dados, tem que recopiar o nome)
 ALTER TABLE <tabela> DROP <nome da coluna>
+
+INSERT
+
+INSERT INTO <tabela>(<colunas>)VALUES(<valores>)
