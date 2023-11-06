@@ -1,0 +1,16 @@
+CÓDIGOS DO BANCO DE DADOS
+
+TIPOS DE DADOS
+
+TEXT: tamanho variável de campo com bastante caracter
+CHAR: tamanho fixo, sempre ocupa aquele espaço (por exemplo, sempre 
+irá ocupar 10 campos mesmo que só tenha 5 caracteres, pegando mais espaço)
+VARCHAR: ocupa menos espaço, pega a proporção de acordo com a quantidade 
+de caracter
+
+INT: num inteiro
+FLOAT: num decimal (float(7,5) = 7 caracteres e 5 decimais ex: 12.34567)
+
+DATE: YYYY/mm/dd
+TIME: hora
+DATETIME: date + time 
