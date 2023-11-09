@@ -1,6 +1,6 @@
 CÓDIGOS DO BANCO DE DADOS
 
-TIPOS DE DADOS
+TIPOS DE DADOS-------------------------------------------------------------------------
 
 TEXT: tamanho variável de campo com bastante caracter
 CHAR: tamanho fixo, sempre ocupa aquele espaço (por exemplo, sempre 
@@ -15,11 +15,11 @@ DATE: YYYY/mm/dd
 TIME: hora
 DATETIME: date + time 
 
-RENOMEAR TABELAS
+RENOMEAR TABELAS-------------------------------------------------------------------------
 
 RENAME TABLE <nome atual> TO <nome novo>
 
-INCLUINDO, EDITANDO E REMOVENDO TABELAS
+INCLUINDO, EDITANDO E REMOVENDO TABELAS-------------------------------------------------------------------------
 
 ALTER TABLE
 
@@ -29,22 +29,29 @@ DROP: remoção
 
 ALTER TABLE <tabela> ADD COLUMN <nome da coluna e seu tipo>
 ALTER TABLE <tabela> CHANGE <nome da coluna que quer editar> <pode mudar
- o nome da coluna e seus tipos>
+o nome da coluna e seus tipos>
 (se não quiser mudar o nome e apenas os dados, tem que recopiar o nome)
 ALTER TABLE <tabela> DROP <nome da coluna>
 
-INSERT
+INSERT-------------------------------------------------------------------------
 
 INSERT INTO <tabela>(<colunas>)VALUES(<valores>)
 
-CONSULTANDO DADOS
+CONSULTANDO DADOS--------------------------------------------------------------
 
 SELECT <colunas> FROM <tabela> (* = todos)
 
-FILTRANDO DADOS (WHERE)
+FILTRANDO DADOS (WHERE)--------------------------------------------------------
+
 SELECT * FROM <tabela> WHERE <coluna> <operador>
 Operadores comparação: =, =>, <=, <, >
 Lógicos: OR (pelo menos um tem que atender) ou AND (todos tem que atender 
 a comparação)
-
 BETWEEN (valores em um intervalo específico)
+Normal: WHERE idade >= 18 AND idade <= 21
+Between: WHERE idade BETWEEN 18 AND 21
+IN (selecionar vários valores de uma única coluna)
+Normal: WHERE interesse = 'Jogos' OR interesse = 'Filmes'
+IN: WHERE interesse IN('Jogos', 'Filmes') ou para não exibir esses respectivos
+valores WHERE interesse NOT IN('Jogos', 'Filmes')
+
