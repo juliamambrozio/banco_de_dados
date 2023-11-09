@@ -36,3 +36,7 @@ ALTER TABLE <tabela> DROP <nome da coluna>
 INSERT
 
 INSERT INTO <tabela>(<colunas>)VALUES(<valores>)
+
+CONSULTANDO DADOS
+
+SELECT <colunas> FROM <tabela> (* = todos)
