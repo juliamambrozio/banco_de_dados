@@ -40,3 +40,11 @@ INSERT INTO <tabela>(<colunas>)VALUES(<valores>)
 CONSULTANDO DADOS
 
 SELECT <colunas> FROM <tabela> (* = todos)
+
+FILTRANDO DADOS (WHERE)
+SELECT * FROM <tabela> WHERE <coluna> <operador>
+Operadores comparação: =, =>, <=, <, >
+Lógicos: OR (pelo menos um tem que atender) ou AND (todos tem que atender 
+a comparação)
+
+BETWEEN (valores em um intervalo específico)
