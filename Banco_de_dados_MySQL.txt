@@ -70,3 +70,10 @@ LIMITANDO RETORNO---------------------------------------------------------
 ORDER BY <coluna> LIMIT <quantidade> OFFSET <valor> (opcional colocar o
 OFFSET)
 
+FUNÇÕES DE AGREGAÇÃO-------------------------------------------------------
+SELECT MIN(<coluna>) = menor valor
+SELECT MAX(<coluna>) = maior valor
+SELECT ABG(<coluna>) = média dos valores
+SELECT SUM(<coluna>) = soma dos valores
+SELECT COUNT(*) = quantidade de todos os registros da tabela (podendo 
+usar filtros também)
