@@ -59,5 +59,14 @@ valores ...WHERE interesse NOT IN('Jogos', 'Filmes')
 '%e%' ('%e, e%') (ou '_e_') 
 
 ORDENANDO RESULTADO--------------------------------------------------------
-ORDER BY <coluna> ASC (ascendente)
+ORDER BY <coluna> ASC (ascendente de acordo com a coluna escolhida, 
+pode ter várias formas de ordenar em um único código)
+DESC: decrescente
+
+LIMITANDO RETORNO---------------------------------------------------------
+
+-LIMIT: define o limite de registros
+-OFFSET: a partir de tal registro é pra exibir o limite
+ORDER BY <coluna> LIMIT <quantidade> OFFSET <valor> (opcional colocar o
+OFFSET)
 
