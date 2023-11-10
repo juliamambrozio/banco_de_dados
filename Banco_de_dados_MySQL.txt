@@ -76,4 +76,9 @@ SELECT MAX(<coluna>) = maior valor
 SELECT ABG(<coluna>) = média dos valores
 SELECT SUM(<coluna>) = soma dos valores
 SELECT COUNT(*) = quantidade de todos os registros da tabela (podendo 
-usar filtros também)
+usar filtros também) (utilizando AS conseguimos apelidar a coluna do 
+COUNT)
+
+AGRUPADO SELEÇÃO DE REGISTROS----------------------------------------------------
+GROUP BY = agrupa os registros
+WHERE <filtro> GROUP BY <ordenação> LIMIT <limite>
