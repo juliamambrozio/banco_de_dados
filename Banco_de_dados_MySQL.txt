@@ -44,14 +44,20 @@ SELECT <colunas> FROM <tabela> (* = todos)
 FILTRANDO DADOS (WHERE)--------------------------------------------------------
 
 SELECT * FROM <tabela> WHERE <coluna> <operador>
-Operadores comparação: =, =>, <=, <, >
-Lógicos: OR (pelo menos um tem que atender) ou AND (todos tem que atender 
+
+-Operadores comparação: =, =>, <=, <, >
+-Lógicos: OR (pelo menos um tem que atender) ou AND (todos tem que atender 
 a comparação)
-BETWEEN (valores em um intervalo específico)
-Normal: WHERE idade >= 18 AND idade <= 21
-Between: WHERE idade BETWEEN 18 AND 21
-IN (selecionar vários valores de uma única coluna)
-Normal: WHERE interesse = 'Jogos' OR interesse = 'Filmes'
-IN: WHERE interesse IN('Jogos', 'Filmes') ou para não exibir esses respectivos
-valores WHERE interesse NOT IN('Jogos', 'Filmes')
+-BETWEEN (valores em um intervalo específico)
+Normal: ...WHERE idade >= 18 AND idade <= 21
+Between: ...WHERE idade BETWEEN 18 AND 21
+-IN (selecionar vários valores de uma única coluna)
+Normal: ...WHERE interesse = 'Jogos' OR interesse = 'Filmes'
+IN: ...WHERE interesse IN('Jogos', 'Filmes') ou para não exibir esses respectivos
+valores ...WHERE interesse NOT IN('Jogos', 'Filmes')
+-LIKE (Permite filtrar através de um caracter): ...WHERE interesse LIKE 
+'%e%' ('%e, e%') (ou '_e_') 
+
+ORDENANDO RESULTADO--------------------------------------------------------
+ORDER BY <coluna> ASC (ascendente)
 
