@@ -85,3 +85,8 @@ WHERE <filtro> GROUP BY <ordenação> LIMIT <limite>
 HAVING (filtro sobre o agrupamento)
 WHERE <filtro> GROUP BY <ordenação> HAVING <filtro sobre agrupamento> LIMIT 
 <limite>
+
+ATUALIZAR REGISTROS-------------------------------------------------------------
+UPDATE <tabela> SET <coluna> = <valor> WHERE <filtro>
+WHERE = caso não queira atualizar todos os registros informados
+exemplo: UPDATE tb_alunos SET nome = 'João' WHERE id_aluno = 3
