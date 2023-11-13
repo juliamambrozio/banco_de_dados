@@ -57,7 +57,6 @@ pode ter várias formas de ordenar em um único código)
 DESC: decrescente
 
 LIMITANDO RETORNO---------------------------------------------------------
-
 -LIMIT: define o limite de registros
 -OFFSET: a partir de tal registro é pra exibir o limite
 ORDER BY <coluna> LIMIT <quantidade> OFFSET <valor> (opcional colocar o
@@ -87,3 +86,11 @@ exemplo: UPDATE tb_alunos SET nome = 'João' WHERE id_aluno = 3
 EXCLUINDO REGISTROS-------------------------------------------------------------
 DELETE FROM <tabela> WHERE <filtro> (é recomendável usar uma coluna de ativo e 
 inativo (caso o registro tenha importância), e atualizar usando o UPDATE)
+
+RELACIONAMENTO ENTRE TABELAS-------------------------------------------------------------
+Chave primária: identificador único
+Chave estrangeira: referência da chave primária de outra tabela
+
+UM para UM
+UM para MUITOS
+MUITOS para MUITOS
