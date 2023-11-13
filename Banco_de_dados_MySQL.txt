@@ -82,3 +82,6 @@ COUNT)
 AGRUPADO SELEÇÃO DE REGISTROS----------------------------------------------------
 GROUP BY = agrupa os registros
 WHERE <filtro> GROUP BY <ordenação> LIMIT <limite>
+HAVING (filtro sobre o agrupamento)
+WHERE <filtro> GROUP BY <ordenação> HAVING <filtro sobre agrupamento> LIMIT 
+<limite>
