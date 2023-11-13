@@ -1,7 +1,6 @@
 CÓDIGOS DO BANCO DE DADOS
 
 TIPOS DE DADOS-------------------------------------------------------------------------
-
 TEXT: tamanho variável de campo com bastante caracter
 CHAR: tamanho fixo, sempre ocupa aquele espaço (por exemplo, sempre 
 irá ocupar 10 campos mesmo que só tenha 5 caracteres, pegando mais espaço)
@@ -16,13 +15,10 @@ TIME: hora
 DATETIME: date + time 
 
 RENOMEAR TABELAS-------------------------------------------------------------------------
-
 RENAME TABLE <nome atual> TO <nome novo>
 
 INCLUINDO, EDITANDO E REMOVENDO TABELAS-------------------------------------------------------------------------
-
 ALTER TABLE
-
 ADD: inclusão de uma nova coluna
 CHANGE: alteração do nome da coluna e de suas propriedades
 DROP: remoção
@@ -34,15 +30,12 @@ o nome da coluna e seus tipos>
 ALTER TABLE <tabela> DROP <nome da coluna>
 
 INSERT-------------------------------------------------------------------------
-
 INSERT INTO <tabela>(<colunas>)VALUES(<valores>)
 
 CONSULTANDO DADOS--------------------------------------------------------------
-
 SELECT <colunas> FROM <tabela> (* = todos)
 
 FILTRANDO DADOS (WHERE)--------------------------------------------------------
-
 SELECT * FROM <tabela> WHERE <coluna> <operador>
 
 -Operadores comparação: =, =>, <=, <, >
@@ -90,3 +83,7 @@ ATUALIZAR REGISTROS-------------------------------------------------------------
 UPDATE <tabela> SET <coluna> = <valor> WHERE <filtro>
 WHERE = caso não queira atualizar todos os registros informados
 exemplo: UPDATE tb_alunos SET nome = 'João' WHERE id_aluno = 3
+
+EXCLUINDO REGISTROS-------------------------------------------------------------
+DELETE FROM <tabela> WHERE <filtro> (é recomendável usar uma coluna de ativo e 
+inativo (caso o registro tenha importância), e atualizar usando o UPDATE)
