@@ -10,9 +10,10 @@ de caracter
 INT: num inteiro
 FLOAT: num decimal (float(7,5) = 7 caracteres e 5 decimais ex: 12.34567)
 
-DATE: YYYY/mm/dd
+DATE: YYYY/mm/dd 
 TIME: hora
 DATETIME: date + time 
+(CURRENT_TIMESTAMP: pega a hora e atribui ao elemento)
 
 RENOMEAR TABELAS-------------------------------------------------------------------------
 RENAME TABLE <nome atual> TO <nome novo>
@@ -94,7 +95,7 @@ Chave estrangeira: referência da chave primária de outra tabela
 UM para UM (apenas um dado para um dado)
 UM para MUITOS (pode inserir vários dados para uma tabela através de uma 
 chave estrangeira)
-MUITOS para MUITOS 
+MUITOS para MUITOS (utilizar uma tabela de apoio)
 
 CHAVE ESTRANGEIRA---------------------------------------------------------------
 FOREIGN KEY(<chave estrangeira>) REFERENCES <tabela que vem a chave>
