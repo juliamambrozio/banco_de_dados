@@ -94,3 +94,8 @@ Chave estrangeira: referência da chave primária de outra tabela
 UM para UM
 UM para MUITOS
 MUITOS para MUITOS
+
+CHAVE ESTRANGEIRA---------------------------------------------------------------
+FOREIGN KEY(<chave estrangeira>) REFERENCES <tabela que vem a chave>
+(<chave estrangeira>)
+REFERENCES : referência
