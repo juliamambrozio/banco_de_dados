@@ -91,11 +91,13 @@ RELACIONAMENTO ENTRE TABELAS----------------------------------------------------
 Chave primária: identificador único
 Chave estrangeira: referência da chave primária de outra tabela
 
-UM para UM
-UM para MUITOS
-MUITOS para MUITOS
+UM para UM (apenas um dado para um dado)
+UM para MUITOS (pode inserir vários dados para uma tabela através de uma 
+chave estrangeira)
+MUITOS para MUITOS 
 
 CHAVE ESTRANGEIRA---------------------------------------------------------------
 FOREIGN KEY(<chave estrangeira>) REFERENCES <tabela que vem a chave>
 (<chave estrangeira>)
 REFERENCES : referência
+
