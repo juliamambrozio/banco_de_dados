@@ -119,3 +119,14 @@ executar todos os dados e, caso exista, retorna a tabela da esquerda)
 
 INNER JOIN (junção interna, combina todos os valores das duas tabelas, prioriza
 o conjunto de relações estabelecidas)
+
+APELIDANDO TABELAS---------------------------------------------------------------------------
+AS (comando usado para apelidas tabelas)
+
+ALIAS
+ex: SELECT p.id_produto, //apelidos das tabelas
+p.produto,
+p.valor,
+dt.descricoes_tecnicas
+FROM tb_produtos AS p LEFT JOIN tb_descricoes_tecnicas AS dt ON(p.id_produto =
+dt.id_produto) WHERE p.valor <= 500
