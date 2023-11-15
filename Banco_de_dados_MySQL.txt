@@ -102,3 +102,19 @@ FOREIGN KEY(<chave estrangeira>) REFERENCES <tabela que vem a chave>
 (<chave estrangeira>)
 REFERENCES : referência
 
+JOINS---------------------------------------------------------------------------
+
+Junções de tabelas (Chama os dados da tabela correspondente e trás do outro 
+lado os dados que estão conectados)
+
+LEFT JOIN (junções à esquerda)
+ex: SELECT * FROM tb_clientes LEFT JOIN tb_pedidos ON (tb_clientes.id_cliente = 
+tb_pedidos.id_pedido) (a tabela da esquerda é prioritária, ou seja, vai
+executar todos os dados e, caso exista, retorna a tabela da direita)
+
+RIGHT JOIN
+ex: SELECT * FROM tb_clientes RIGHT JOIN tb_pedidos ON (tb_clientes.id_cliente
+= tb_pedidos.id_pedido)(a tabela da direita é prioritária, ou seja, vai 
+executar todos os dados e, caso exista, retorna a tabela da esquerda)
+
+INNER JOIN (junção interna) (combina todos os valores das duas tabelas)
