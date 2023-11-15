@@ -1,0 +1,9 @@
+1- SELECT * FROM tb_clientes WHERE idade > 29 ORDER BY ASC
+2- ALTER TABLE tb_clientes ADD COLUMN sexo VARCHAR(1) NOT NULL;
+   ALTER TABLE tb_clientes ADD COLUMN endereco VARCHAR(150) NULL;
+3- UPDATE tb_clientes SET sexo = 'M' WHERE id_cliente in(1, 2, 3, 6, 7)
+4- UPDATE tb_clientes SET sexo = 'F' WHERE id_cliente BETWEEN 4 AND 10
+5-SELECT c.id_cliente, c.nome, c.idade, prod.produto, prod.valor FROM 
+tb_clientes AS c INNER JOIN id_pedidos AS p ON (c.id_cliente = p.id_cliente) 
+INNER JOIN tb_pedidos_produtos AS pp ON(p.id_pedido = pp.id_pedido) LEFT JOIN 
+tb_produtos AS prod ON (pp.id_produto = prod.id_produto);
