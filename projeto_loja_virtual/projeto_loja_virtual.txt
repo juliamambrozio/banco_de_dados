@@ -56,3 +56,4 @@ INSERT INTO tb_descricoes_tecnicas(id_produto, descricao_tecnica) VALUES (2, 'A 
 
 INSERT INTO tb_descricoes_tecnicas(id_produto, descricao_tecnica) VALUES (3, 'Saia da mesmice. O smartphone LG está mais divertido, rápido, fácil, cheio de selfies e com tela HD de incríveis 5,3"...');
 
+INSERT INTO tb_pedidos_produtos(id_pedido, id_produto)VALUES(1, 2)
