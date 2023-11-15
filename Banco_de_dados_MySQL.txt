@@ -117,4 +117,5 @@ ex: SELECT * FROM tb_clientes RIGHT JOIN tb_pedidos ON (tb_clientes.id_cliente
 = tb_pedidos.id_pedido)(a tabela da direita é prioritária, ou seja, vai 
 executar todos os dados e, caso exista, retorna a tabela da esquerda)
 
-INNER JOIN (junção interna) (combina todos os valores das duas tabelas)
+INNER JOIN (junção interna, combina todos os valores das duas tabelas, prioriza
+o conjunto de relações estabelecidas)
